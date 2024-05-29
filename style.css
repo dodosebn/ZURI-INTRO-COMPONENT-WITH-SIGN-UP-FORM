@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-Red: hsl(0, 100%, 74%);
+  --primary-Green: hsl(154, 59%, 51%);
+  --primay-Blue: hsl(248, 32%, 49%);
+  --neutral-DarkBl: hsl(249, 10%, 26%);
+  --neutral-GrayishBl: hsl(246, 25%, 77%);
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-image: linear-gradient(var(--primary-Red), var(--primary-Red)),
+    url("images/bg-intro-desktop.png");
+    background-color: var(--primary-Red);
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode:hue;
+  overflow-x: hidden;
+}
+.form-container{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    padding: 10em;
+}
+.form-itself{
+    margin-top: 1em;
+    background-color: #fff;
+    width: 30em;
+    height: 28em;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 3.2em;
+}
+.nmp, input[type="submit"]{
+    width:130%;
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1.3px solid #dedede;
+    border-radius: 4px;
+    outline: none;
+    text-indent: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group{  position: relative;}
+#eye-icon{
+  width: 2em;
+  height: 2em;
+}
+.inp-icon .inp{
+    position: absolute;
+    left: 22em;
+    top: 1em;
+    width: 1.3em;
+    height: 1.3em;
+    display: none;
+}
+.left{
+    position: relative;
+left: 16em;
+font-size: 13px;
+  color: #fff;
+}
+.form-group p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 1em;
+    width: 40em;
+    color: var(--neutral-GrayishBl);
+  }
+  .form-group p a {
+    text-decoration: none;
+    color: var(--primary-Red);
+    font-weight: 700;
+  }
+  button{
+    border: 1px solid var(--primay-Blue);
+    box-shadow: 2px 5px 2px var(--primay-Blue);
+    background-color: var(--primay-Blue);
+    color: #fff;
+    width: 100%;
+    font-family: "poppins", sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 1.2em;
+}
+#button{
+    background-color: var(--primary-Green);
+    color: #fff;
+    border: 1px solid var(--primary-Green);
+    box-shadow: 1px 5px 1px var(--primary-Green);
+    font-size: 1em;
+    border-radius: 7px;
+}
+button span{
+    font-weight: 500; 
+    color: #dedede;
+}
+.headline-container{ position: relative;}
+.headline-hold{
+    position: absolute;
+    bottom: 19em;
+}
+.headline-itself{   padding-left: 10em;}
+.headline-itself h1{
+    color: #fff;
+    font-size: 2.3em;
+    width: 11em;
+    font-weight: 800;
+    text-align-last:auto;
+}
+.paragraph{
+    width: 30em;
+    color: #dedede;
+    margin-top: 1em;
+    line-height: 1.7em;
+}
+.attribution { text-align: center; font-size: 17px; }
+.attribution a { color: hsl(228, 45%, 44%);  }
+@media(max-width:500px){
+    body{
+    background-image: linear-gradient(var(--primary-Red), var(--primary-Red)),
+      url("images/bg-intro-mobile.png"); 
+  }
+    .headline-hold{
+        bottom: 49em;
+        text-align: center;   
+    }
+    .headline-itself{ padding-left: 0;  }
+    .headline-itself h1{
+        font-size: 2em;
+        width: 11em;
+        font-weight: 700;
+    }
+    .paragraph{
+        width: 20em;
+        text-align: center;
+       margin-left: 1.6em;
+    }
+    .form-container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+     .form-container{
+        padding: 10em;
+        margin-top: 17em;
+    }
+    .form-itself{
+        height: 28em;
+        width: 20em;
+    }
+    form {   margin-left: 1.4em;}
+    .form-group{ margin-bottom: -6px; }
+    .nmp, input[type="submit"]{ width:93%; }
+    .inp-icon .inp{ left: 14.5em; }
+    .left{
+    left: 12em;
+    bottom: 4px;
+    font-size: 10.5px;
+    }
+    .form-group p {
+        font-size: 11px;
+        padding-left: 3em;
+        margin-top: 1.4em;
+        width: 23em;
+        text-align-last: center;
+        line-height: 1.7em;
+      }
+      button{ 
+        padding: 3em;
+      height: 1em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+        line-height: 1.7em;
+    }
+    button p{
+        width: 11em;
+    }
+    .attribution{width: 20em;}
+}
